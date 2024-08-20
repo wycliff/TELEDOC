@@ -31,9 +31,9 @@ const loginUser = async (user: any): Promise<ILginResponse> => {
                 email: isUserExist.email
             }
         })
-        if (getDoctorInfo && getDoctorInfo?.verified === false) {
-            throw new ApiError(httpStatus.NOT_FOUND, "Please Verify Your Email First !");
-        }
+        // if (getDoctorInfo && getDoctorInfo?.verified === false) {
+        //     throw new ApiError(httpStatus.NOT_FOUND, "Please Verify Your Email First !");
+        // }
     }
     const isPasswordMatched = await bcrypt.compare(password, isUserExist.password);
 

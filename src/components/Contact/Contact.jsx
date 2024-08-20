@@ -52,10 +52,7 @@ const Contact = () => {
 
                                 <div className="d-flex mb-2 gap-2">
                                     <FaPhoneAlt className='icon' />
-                                    <div>
-                                        <h4>Call:</h4>
-                                        <p>+88 01751 040425</p>
-                                    </div>
+                            
                                 </div>
                             </div>
 
